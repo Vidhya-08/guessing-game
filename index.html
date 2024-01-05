@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="co">
+      <div class="game">
+        <button onclick="start()">🏁START GAME</button>
+        <button onclick="tip()">💡TIPS</button>
+
+        <div class="tip">
+          <h2>
+            💡Guess a number between 1 to 20<br />💡 You have only 10 chances<br />💡&nbsp;&nbsp;Make
+            use of the hints given
+          </h2>
+          <center><button onclick="tip()">👍OKIE</button></center>
+        </div>
+
+        <div class="start">
+          <h1>Guess a number</h1>
+          <div class="life">
+            <span style="font-size: 40px">&#128150;</span>
+            <p id="count">10</p>
+          </div>
+          <input type="text" placeholder="Enter a Number" id="guess" />
+          <button onclick="play()">CHECK</button>
+          <p id="hint"></p>
+          <h1 id="over"></h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
